@@ -3,9 +3,9 @@ Description=App Name
 After=network.target
 
 [Service]
-User=pi
-WorkingDirectory=/home/pi/venvs/financesv/finances/flaskr
-ExecStart=/home/pi/venvs/financesv/bin/waitress-serve --call app:create_app
+User=user
+WorkingDirectory=/path/to/flaskr
+ExecStart=/path/to/bin/waitress-serve --call app:create_app
 Restart=always
 
 [Install]
